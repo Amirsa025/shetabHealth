@@ -1,0 +1,18 @@
+{
+  "name": "tailwinds",
+  "version": "1.0.1",
+  "description": "first project with tailwind",
+  "main": "app.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "serve": "live-server ./src --no-css-inject "
+  },
+  "author": "amirsakizadeh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1"
+  }
+}

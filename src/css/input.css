@@ -1,0 +1,65 @@
+@tailwind base;
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/eot/IRANSansWeb.eot');
+    src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/woff/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+@layer base {
+    body {
+        font-family:IRANSans, serif;
+    }
+}
+@tailwind components;
+@layer components {
+     .scroll-fixed {
+         @apply h-full overflow-hidden
+     }
+}
+@tailwind utilities;
+[x-cloak] { display: none !important; }
+.box-info{
+    border-radius: 4rem 2rem 2rem 2rem;
+
+}
+.service-info{
+
+ }
+.service-info img{
+    @apply w-12 h-12
+}
+.service-info {
+    border-radius: 7rem 5rem  12rem 1.25rem;
+}
+.button_next__service{
+    border-radius: 1.5rem   13.25rem  5rem ;
+}
+.header-image {
+    background-image: url(../image/header/bg-header.jpg);
+}
+.services__item--selected {
+   @apply bg-gradient-to-br from-blue-600 to-purple-700 text-white transition-all   ;
+}
+.about-us__pic img{
+    @apply  object-center-top object-cover rounded-2xl h-[15rem] w-full lg:h-[22rem] lg:w-72 lg:mx-auto lg:object-fill lg:rounded-[2rem] md:object-cover md:h-[27rem] md:px-[1rem] md:w-full md:rounded-[4rem]
+}
+
+.article__pic  {
+    border-radius: 1rem
+}
+.shadow-video {
+    -webkit-box-shadow: inset -12px -48px 13px -10px rgba(0,0,0,0.59);
+    box-shadow: inset -12px -48px 13px -10px rgba(0,0,0,0.7);
+}
+.textVideo p{
+    text-shadow: -27px 26px 14px rgba(69, 69, 69, 0.79);
+}
+.video-thumbnail  {
+    border-radius: 175px 0px 0px 69px;
+    -moz-border-radius: 175px 0px 0px 69px;
+    -webkit-border-radius: 175px 0px 0px 69px;
+}
+@media  screen and (max-width:768px) {
+
+}
